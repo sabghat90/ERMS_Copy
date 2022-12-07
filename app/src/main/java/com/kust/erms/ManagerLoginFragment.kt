@@ -4,26 +4,44 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import com.google.firebase.auth.FirebaseAuth
+import com.kust.erms.databinding.FragmentManagerLoginBinding
 
 class ManagerLoginFragment : Fragment() {
+
+    var _binding: FragmentManagerLoginBinding? = null
+    val binding get() = _binding!!
+
+    lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-        val view: View =  inflater.inflate(R.layout.fragment_manager_login, container, false)
 
-        val btnLogin : Button = view.findViewById(R.id.btn_login)
-        val btnSignUp : Button = view.findViewById(R.id.btn_signup)
+        _binding = FragmentManagerLoginBinding.inflate(inflater, container, false)
 
-        btnSignUp.setOnClickListener {
-            findNavController().navigate(R.id.action_managerLoginFragment_to_managerSignUpFragment)
+        auth = FirebaseAuth.getInstance()
+
+        binding.btnLogin.setOnClickListener {
+            loginManager()
+
         }
 
-        return view
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    private fun loginManager() {
+        val email = binding.editTextEmail.text.toString()
+        val password = binding.editTextPassword.text.toString()
+
+        auth.signInWithEmailAndPassword(email, password)
+
     }
 }

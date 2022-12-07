@@ -7,7 +7,7 @@ import com.kust.erms.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
 
-    // --Commented out by Inspection (12/7/2022 8:57 AM):private lateinit var binding: ActivityRegistrationBinding
+     private lateinit var binding: ActivityRegistrationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)

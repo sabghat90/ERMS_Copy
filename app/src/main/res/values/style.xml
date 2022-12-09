@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_edit_text_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/colorRed</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="counterEnabled">true</item>
+    </style>
+
+
+</resources>

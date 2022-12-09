@@ -79,7 +79,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Manager"
+                    android:text="Create A Company"
                     android:textColor="@color/primaryTextColor"
                     android:textSize="24sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_company"
@@ -135,7 +135,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@drawable/ic_manager" />
+                    android:src="@drawable/ic_manager" />
 
                 <TextView
                     android:id="@+id/manager_heading"

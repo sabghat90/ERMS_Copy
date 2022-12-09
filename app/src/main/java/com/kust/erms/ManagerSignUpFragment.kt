@@ -1,17 +1,18 @@
 package com.kust.erms
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.kust.erms.databinding.FragmentManagerSignUpBinding
 
 class ManagerSignUpFragment : Fragment() {
 
-    lateinit var auth: FirebaseAuth
+    private lateinit var auth: FirebaseAuth
     private var _binding: FragmentManagerSignUpBinding? = null
 
     private val binding get() = _binding!!
@@ -28,6 +29,7 @@ class ManagerSignUpFragment : Fragment() {
 
         binding.btnSignup.setOnClickListener {
             signUpManager()
+            findNavController().navigate(R.id.action_managerSignUpFragment_to_managerLoginFragment)
         }
 
         return binding.root
@@ -45,11 +47,11 @@ class ManagerSignUpFragment : Fragment() {
         val password = binding.editTextPassword.text.toString()
 
         auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener() {
+            .addOnCompleteListener(requireActivity()) {
                 if (it.isSuccessful) {
-
+                    Toast.makeText(context, "User Added!", Toast.LENGTH_SHORT).show()
                 } else {
-                    Log.d("Check", email)
+                    Toast.makeText(context, "Failed!", Toast.LENGTH_SHORT).show()
                 }
             }
     }

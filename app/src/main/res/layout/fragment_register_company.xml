@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeeLoginFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterCompanyFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
+            android:contentDescription="top wave"
             android:scaleType="fitStart"
             android:src="@drawable/wave"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
-            android:text="Welcome, Employee"
+            android:text="Register Your Company"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,35 +40,38 @@
             android:id="@+id/tv_sub_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Login Below With Your Credentials"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Provide Your Company Information To Get Started"
             app:layout_constraintEnd_toEndOf="@+id/text_view_heading"
             app:layout_constraintStart_toStartOf="@+id/text_view_heading"
             app:layout_constraintTop_toBottomOf="@+id/text_view_heading" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/primaryLightColor"
             app:endIconMode="clear_text"
             app:endIconTint="@color/primaryLightColor"
-            app:helperTextEnabled="true"
             app:helperText="* example@example.com"
+            app:helperTextEnabled="true"
             app:helperTextTextColor="@color/colorRed"
             app:layout_constraintEnd_toEndOf="@+id/tv_sub_heading"
             app:layout_constraintStart_toStartOf="@+id/tv_sub_heading"
-            app:layout_constraintTop_toBottomOf="@+id/tv_sub_heading">
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_heading"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/primaryLightColor">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -89,6 +93,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -96,16 +101,22 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button"
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="50dp"
-            android:text="Login"
+            android:layout_marginBottom="24dp"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@color/secondaryColor"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>

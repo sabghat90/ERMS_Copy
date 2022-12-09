@@ -4,31 +4,36 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.kust.erms.databinding.FragmentSelectRoleBinding
 
 class SelectRoleFragment : Fragment() {
+
+    private var _binding: FragmentSelectRoleBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_select_role, container, false)
+        _binding = FragmentSelectRoleBinding.inflate(inflater, container, false)
 
-        val cardManager : CardView = view.findViewById(R.id.card_manager)
-        val cardEmployee: CardView = view.findViewById(R.id.card_employee)
 
-        cardManager.setOnClickListener {
+        binding.cardManager.setOnClickListener {
             findNavController().navigate(R.id.action_selectRoleFragment_to_managerLoginFragment)
         }
 
-        cardEmployee.setOnClickListener {
+        binding.cardEmployee.setOnClickListener {
             findNavController().navigate(R.id.action_selectRoleFragment_to_employeeLoginFragment)
         }
 
-        return view
+        binding.cardCompany.setOnClickListener {
+            findNavController().navigate(R.id.action_selectRoleFragment_to_companyLoginFragment)
+        }
+
+        return binding.root
 
     }
 }

@@ -1,8 +1,8 @@
-package com.kust.erms.activities
+package com.kust.erms_company.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.kust.erms.R
+import com.kust.erms_company.R
 
 class CompleteProfileManagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

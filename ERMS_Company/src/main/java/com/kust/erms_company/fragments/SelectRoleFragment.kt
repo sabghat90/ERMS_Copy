@@ -1,4 +1,4 @@
-package com.kust.erms.fragments
+package com.kust.erms_company.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.kust.erms.R
-import com.kust.erms.databinding.FragmentSelectRoleBinding
+import com.kust.erms_company.R
+import com.kust.erms_company.databinding.FragmentSelectRoleBinding
 
 class SelectRoleFragment : Fragment() {
 

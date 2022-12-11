@@ -1,4 +1,4 @@
-package com.kust.erms.activities
+package com.kust.erms_company.activities
 
 import android.content.Intent
 import android.net.Uri
@@ -10,8 +10,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
-import com.kust.erms.databinding.ActivityCompleteCompanyInformationBinding
-import com.kust.erms.models.Company
+import com.kust.erms_company.databinding.ActivityCompleteCompanyInformationBinding
+import com.kust.erms_company.models.Company
 
 class CompleteCompanyInformationActivity : AppCompatActivity() {
 

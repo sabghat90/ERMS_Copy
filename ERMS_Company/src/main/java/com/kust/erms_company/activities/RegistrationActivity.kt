@@ -1,9 +1,9 @@
-package com.kust.erms.activities
+package com.kust.erms_company.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
-import com.kust.erms.databinding.ActivityRegistrationBinding
+import com.kust.erms_company.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
 

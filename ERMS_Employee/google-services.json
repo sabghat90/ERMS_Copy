@@ -37,67 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:513915002409:android:b4ba3c33f11af65b84c638",
-        "android_client_info": {
-          "package_name": "com.kust.erms_company"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "513915002409-4176o4minpp3cj47d9lgpjkhed1u040p.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB2__Dg0WvFOOUHTSZuhdYZ4nmlcmeL6ZQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "513915002409-4176o4minpp3cj47d9lgpjkhed1u040p.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:513915002409:android:edbb8fc00b630d6584c638",
         "android_client_info": {
           "package_name": "com.kust.erms_employee"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "513915002409-4176o4minpp3cj47d9lgpjkhed1u040p.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB2__Dg0WvFOOUHTSZuhdYZ4nmlcmeL6ZQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "513915002409-4176o4minpp3cj47d9lgpjkhed1u040p.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:513915002409:android:335afd805ec2d88b84c638",
-        "android_client_info": {
-          "package_name": "com.kust.erms_manager"
         }
       },
       "oauth_client": [

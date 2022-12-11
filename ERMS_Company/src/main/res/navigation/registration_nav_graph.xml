@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/selectRoleFragment"
-        android:name="com.kust.erms.fragments.SelectRoleFragment"
+        android:name="com.kust.erms_company.fragments.SelectRoleFragment"
         android:label="fragment_select_role"
         tools:layout="@layout/fragment_select_role" >
         <action
@@ -30,12 +30,12 @@
     </fragment>
     <fragment
         android:id="@+id/employeeLoginFragment"
-        android:name="com.kust.erms.fragments.EmployeeLoginFragment"
+        android:name="com.kust.erms_company.fragments.EmployeeLoginFragment"
         android:label="fragment_employee_login"
         tools:layout="@layout/fragment_employee_login" />
     <fragment
         android:id="@+id/managerLoginFragment"
-        android:name="com.kust.erms.fragments.ManagerLoginFragment"
+        android:name="com.kust.erms_company.fragments.ManagerLoginFragment"
         android:label="fragment_manager_login"
         tools:layout="@layout/fragment_manager_login" >
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/managerSignUpFragment"
-        android:name="com.kust.erms.fragments.ManagerSignUpFragment"
+        android:name="com.kust.erms_company.fragments.ManagerSignUpFragment"
         android:label="fragment_manager_sign_up"
         tools:layout="@layout/fragment_manager_sign_up">
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerCompanyFragment"
-        android:name="com.kust.erms.fragments.RegisterCompanyFragment"
+        android:name="com.kust.erms_company.fragments.RegisterCompanyFragment"
         android:label="fragment_register_company"
         tools:layout="@layout/fragment_register_company">
         <action
@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/companyLoginFragment"
-        android:name="com.kust.erms.fragments.CompanyLoginFragment"
+        android:name="com.kust.erms_company.fragments.CompanyLoginFragment"
         android:label="fragment_company_login"
         tools:layout="@layout/fragment_company_login">
         <action

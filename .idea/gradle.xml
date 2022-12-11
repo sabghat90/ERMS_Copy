@@ -11,8 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ERMS_Company" />
-            <option value="$PROJECT_DIR$/erms_employee" />
-            <option value="$PROJECT_DIR$/erms_manager" />
+            <option value="$PROJECT_DIR$/ERMS_Employee" />
+            <option value="$PROJECT_DIR$/ERMS_Manager" />
           </set>
         </option>
       </GradleProjectSettings>

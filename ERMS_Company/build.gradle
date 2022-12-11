@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.kust.erms'
+    namespace 'com.kust.erms_company'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.kust.erms"
+        applicationId "com.kust.erms_company"
         minSdk 21
         targetSdk 33
         versionCode 1

@@ -1,4 +1,4 @@
-package com.kust.erms.models
+package com.kust.erms_company.models
 
 data class Company(
     val name: String?,

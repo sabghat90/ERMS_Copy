@@ -1,5 +1,8 @@
-package com.kust.erms.fragments
+@file:Suppress("DEPRECATION")
 
+package com.kust.erms_company.fragments
+
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,32 +12,35 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
-import com.kust.erms.R
-import com.kust.erms.activities.CompleteProfileManagerActivity
-import com.kust.erms.databinding.FragmentManagerLoginBinding
+import com.kust.erms_company.R
+import com.kust.erms_company.activities.CompleteCompanyInformationActivity
+import com.kust.erms_company.databinding.FragmentCompanyLoginBinding
 
-class ManagerLoginFragment : Fragment() {
+class CompanyLoginFragment : Fragment() {
 
-    private var _binding: FragmentManagerLoginBinding? = null
+    private var _binding: FragmentCompanyLoginBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var progressDialog: ProgressDialog
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentManagerLoginBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentCompanyLoginBinding.inflate(inflater, container, false)
 
         auth = FirebaseAuth.getInstance()
+        progressDialog = ProgressDialog(requireActivity())
+        progressDialog.setMessage("Logging In...")
 
         binding.btnSignup.setOnClickListener {
-            findNavController().navigate(R.id.action_managerLoginFragment_to_managerSignUpFragment)
+            findNavController().navigate(R.id.action_companyLoginFragment_to_registerCompanyFragment)
         }
 
         binding.btnLogin.setOnClickListener {
-            loginManager()
+            companyLogin()
         }
 
         return binding.root
@@ -45,16 +51,19 @@ class ManagerLoginFragment : Fragment() {
         _binding = null
     }
 
-    private fun loginManager() {
+    private fun companyLogin() {
         val email = binding.editTextEmail.text.toString()
         val password = binding.editTextPassword.text.toString()
+
+        progressDialog.show()
 
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(requireActivity()) {
                 if (it.isSuccessful) run {
                     val lunchProfileActivity =
-                        Intent(requireActivity(), CompleteProfileManagerActivity::class.java)
+                        Intent(requireActivity(), CompleteCompanyInformationActivity::class.java)
                     startActivity(lunchProfileActivity)
+                    progressDialog.hide()
                     activity?.finish()
                 } else {
                     Toast.makeText(

@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ERMS"
 include ':ERMS_Company'
-include ':erms_manager'
-include ':erms_employee'
+include ':ERMS_Manager'
+include ':ERMS_Employee'

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor"
+    tools:context=".fragments.SelectRoleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_view_main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Select Your Role"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26999998" />
+
+        <TextView
+            android:id="@+id/text_view_sub_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Please select your role"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_main_heading"
+            app:layout_constraintStart_toStartOf="@+id/text_view_main_heading"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_main_heading" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#3E8688"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_sub_heading"
+            app:layout_constraintStart_toStartOf="@+id/text_view_sub_heading"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_sub_heading">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:id="@+id/icon_company"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:contentDescription="manager icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_company"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/company_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Create A Company"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_company"
+                    app:layout_constraintTop_toTopOf="@+id/icon_company" />
+
+                <TextView
+                    android:id="@+id/tv_company_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Track your employees and rate their performance"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_company"
+                    app:layout_constraintTop_toBottomOf="@+id/company_heading" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#3E8688"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/card_company"
+            app:layout_constraintTop_toBottomOf="@+id/card_company">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <!-- Media -->
+                <ImageView
+                    android:id="@+id/icon_manager"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:contentDescription="manager icon"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_manager" />
+
+                <TextView
+                    android:id="@+id/manager_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Manager"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_manager"
+                    app:layout_constraintTop_toTopOf="@+id/icon_manager" />
+
+                <TextView
+                    android:id="@+id/tv_manager_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Track your employees and rate their performance"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_manager"
+                    app:layout_constraintTop_toBottomOf="@+id/manager_heading" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#3E8688"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_manager">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/icon_employee"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_employee"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/employee_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Employee"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_employee"
+                    app:layout_constraintTop_toTopOf="@+id/icon_employee" />
+
+                <TextView
+                    android:id="@+id/employee_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Check your task and activities"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/icon_employee"
+                    app:layout_constraintTop_toBottomOf="@+id/employee_heading" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

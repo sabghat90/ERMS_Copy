@@ -102,7 +102,7 @@ On the basis of attendance, task, events, meetings, work: employees will get poi
 <h1>Tools and Techniques</h1>
 <ul>
 <li>Android Studio</li>
-<li>Java for back-end</li>
+<li>Kotlin for back-end</li>
 <li>XML for front-end</li>
 <li>Firebase Database</li>
 <li>Firebase storage</li>

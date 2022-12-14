@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.kust.erms_company.activities
 
 import android.content.Intent

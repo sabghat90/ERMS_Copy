@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:513915002409:android:64162e0725add5e184c638",
+        "mobilesdk_app_id": "1:513915002409:android:b4ba3c33f11af65b84c638",
         "android_client_info": {
-          "package_name": "com.kust.erms"
+          "package_name": "com.kust.erms_company"
         }
       },
       "oauth_client": [

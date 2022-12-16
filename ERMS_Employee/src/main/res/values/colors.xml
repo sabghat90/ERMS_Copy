@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#1c5656</color>
-    <color name="primaryLightColor">#4c8383</color>
-    <color name="primaryDarkColor">#002d2d</color>
-    <color name="secondaryColor">#2cd9d9</color>
-    <color name="secondaryLightColor">#74ffff</color>
-    <color name="secondaryDarkColor">#00a7a8</color>
-    <color name="primaryTextColor">#f5f5f5</color>
-    <color name="secondaryTextColor">#f5f5f5</color>
+
+    <!--    light theme colors-->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="errorColor">#B00020</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!--    some random colors-->
     <color name="colorIcon">#FFD028</color>
     <color name="colorRed">#D92C2C</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-
     <color name="Transparent">#00000000</color>
+
 </resources>

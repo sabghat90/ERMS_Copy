@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
             android:text="Register Your Company"
-            android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,15 +55,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             app:endIconMode="clear_text"
-            app:endIconTint="@color/primaryLightColor"
             app:helperText="* example@example.com"
             app:helperTextEnabled="true"
             app:helperTextTextColor="@color/colorRed"
             app:layout_constraintEnd_toEndOf="@+id/tv_sub_heading"
             app:layout_constraintStart_toStartOf="@+id/tv_sub_heading"
             app:layout_constraintTop_toBottomOf="@+id/tv_sub_heading"
-            app:startIconDrawable="@drawable/ic_email"
-            app:startIconTint="@color/primaryLightColor">
+            app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_email"
@@ -82,15 +79,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             app:endIconMode="password_toggle"
-            app:endIconTint="@color/primaryLightColor"
             app:helperText="* Six letters\n* One digit\n* One Special Character"
             app:helperTextEnabled="true"
             app:helperTextTextColor="@color/colorRed"
             app:layout_constraintEnd_toEndOf="@+id/textInputLayout_email"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout_email"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout_email"
-            app:startIconDrawable="@drawable/ic_password"
-            app:startIconTint="@color/primaryLightColor">
+            app:startIconDrawable="@drawable/ic_password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_password"
@@ -109,8 +104,6 @@
             android:layout_marginBottom="24dp"
             android:text="Register"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
-            app:backgroundTint="@color/secondaryColor"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

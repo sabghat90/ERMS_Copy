@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    dark theme colors-->
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="backgroundColor">#121212</color>
+    <color name="surfaceColor">#121212</color>
+    <color name="errorColor">#CD6679</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnBackground">#FFFFFF</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorOnError">#000000</color>
+
+    <!--    some random colors-->
+    <color name="colorIcon">#FFD028</color>
+    <color name="colorRed">#D92C2C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="Transparent">#00000000</color>
+
+</resources>

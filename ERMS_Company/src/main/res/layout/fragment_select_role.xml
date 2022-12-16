@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryDarkColor"
     tools:context=".fragments.SelectRoleFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,7 +16,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:text="Select Your Role"
-            android:textColor="@color/primaryTextColor"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +30,6 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/nunito_semibold"
             android:text="Please select your role"
-            android:textColor="@color/primaryTextColor"
             app:layout_constraintEnd_toEndOf="@+id/text_view_main_heading"
             app:layout_constraintStart_toStartOf="@+id/text_view_main_heading"
             app:layout_constraintTop_toBottomOf="@+id/text_view_main_heading" />
@@ -47,7 +44,6 @@
             android:checkable="true"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#3E8688"
             app:cardCornerRadius="10dp"
             app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="@+id/text_view_sub_heading"
@@ -80,7 +76,6 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Create A Company"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="24sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_company"
                     app:layout_constraintTop_toTopOf="@+id/icon_company" />
@@ -93,7 +88,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:text="Track your employees and rate their performance"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_company"
                     app:layout_constraintTop_toBottomOf="@+id/company_heading" />
@@ -112,7 +106,6 @@
             android:checkable="true"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#3E8688"
             app:cardCornerRadius="10dp"
             app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +138,6 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Manager"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="24sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_manager"
                     app:layout_constraintTop_toTopOf="@+id/icon_manager" />
@@ -158,7 +150,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:text="Track your employees and rate their performance"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_manager"
                     app:layout_constraintTop_toBottomOf="@+id/manager_heading" />
@@ -177,7 +168,6 @@
             android:checkable="true"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#3E8688"
             app:cardCornerRadius="10dp"
             app:cardElevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -206,7 +196,6 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Employee"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="24sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_employee"
                     app:layout_constraintTop_toTopOf="@+id/icon_employee" />
@@ -219,7 +208,6 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:text="Check your task and activities"
-                    android:textColor="@color/primaryTextColor"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/icon_employee"
                     app:layout_constraintTop_toBottomOf="@+id/employee_heading" />

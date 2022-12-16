@@ -1,17 +1,25 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.ERMS" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
+    <style name="Theme.Base.ERMS" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
         <!-- Primary brand colors-->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
-        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondaryColor</item>
-        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
-        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!--        some other colors-->
+        <item name="background">@color/backgroundColor</item>
+        <item name="colorOnError">@color/colorOnError</item>
+        <item name="errorTextColor">@color/errorColor</item>
+        <item name="helperTextTextColor">@color/errorColor</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorSurface">@color/surfaceColor</item>
 
         <!-- Status bar color -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>

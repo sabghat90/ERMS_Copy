@@ -29,12 +29,14 @@ class ManagerLoginFragment : Fragment() {
 
         auth = FirebaseAuth.getInstance()
 
-        binding.btnSignup.setOnClickListener {
-            findNavController().navigate(R.id.action_managerLoginFragment_to_managerSignUpFragment)
-        }
+
 
         binding.btnLogin.setOnClickListener {
             loginManager()
+        }
+
+        binding.btnSignup.setOnClickListener {
+            findNavController().navigate(R.id.action_companyLoginFragment_to_registerCompanyFragment)
         }
 
         return binding.root

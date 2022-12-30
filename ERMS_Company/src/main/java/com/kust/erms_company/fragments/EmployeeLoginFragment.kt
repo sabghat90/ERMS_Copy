@@ -9,7 +9,6 @@ import com.kust.erms_company.R
 
 class EmployeeLoginFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {

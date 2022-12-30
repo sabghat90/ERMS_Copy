@@ -3,78 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/registration_nav_graph"
-    app:startDestination="@id/selectRoleFragment">
+    app:startDestination="@id/companyLoginFragment">
 
     <fragment
-        android:id="@+id/selectRoleFragment"
-        android:name="com.kust.erms_company.fragments.SelectRoleFragment"
-        android:label="fragment_select_role"
-        tools:layout="@layout/fragment_select_role" >
-        <action
-            android:id="@+id/action_selectRoleFragment_to_managerLoginFragment"
-            app:destination="@id/managerLoginFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-        <action
-            android:id="@+id/action_selectRoleFragment_to_employeeLoginFragment"
-            app:destination="@id/employeeLoginFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-        <action
-            android:id="@+id/action_selectRoleFragment_to_companyLoginFragment"
-            app:destination="@id/companyLoginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/employeeLoginFragment"
-        android:name="com.kust.erms_company.fragments.EmployeeLoginFragment"
-        android:label="fragment_employee_login"
-        tools:layout="@layout/fragment_employee_login" />
-    <fragment
-        android:id="@+id/managerLoginFragment"
-        android:name="com.kust.erms_company.fragments.ManagerLoginFragment"
-        android:label="fragment_manager_login"
-        tools:layout="@layout/fragment_manager_login" >
-        <action
-            android:id="@+id/action_managerLoginFragment_to_managerSignUpFragment"
-            app:destination="@id/managerSignUpFragment"
-            app:enterAnim="@animator/nav_default_enter_anim"
-            app:exitAnim="@animator/nav_default_exit_anim"
-            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
-            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/managerSignUpFragment"
-        android:name="com.kust.erms_company.fragments.ManagerSignUpFragment"
-        android:label="fragment_manager_sign_up"
-        tools:layout="@layout/fragment_manager_sign_up">
-        <action
-            android:id="@+id/action_managerSignUpFragment_to_managerLoginFragment"
-            app:destination="@id/managerLoginFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-    </fragment>
-    <fragment
-        android:id="@+id/registerCompanyFragment"
-        android:name="com.kust.erms_company.fragments.RegisterCompanyFragment"
-        android:label="fragment_register_company"
-        tools:layout="@layout/fragment_register_company">
-        <action
-            android:id="@+id/action_registerCompanyFragment_to_companyLoginFragment"
-            app:destination="@id/companyLoginFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/companyLoginFragment"
-        android:name="com.kust.erms_company.fragments.CompanyLoginFragment"
+        android:name="com.kust.erms_company.ui.auth.CompanyLoginFragment"
         android:label="fragment_company_login"
         tools:layout="@layout/fragment_company_login">
         <action
             android:id="@+id/action_companyLoginFragment_to_registerCompanyFragment"
             app:destination="@id/registerCompanyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerCompanyFragment"
+        android:name="com.kust.erms_company.ui.auth.RegisterCompanyFragment"
+        android:label="fragment_register_company"
+        tools:layout="@layout/fragment_register_company">
+        <action
+            android:id="@+id/action_registerCompanyFragment_to_companyLoginFragment"
+            app:destination="@id/companyLoginFragment" />
     </fragment>
 </navigation>

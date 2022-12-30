@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.kust.erms_company.R
 import com.kust.erms_company.databinding.FragmentSelectRoleBinding
 
 class SelectRoleFragment : Fragment() {
@@ -22,17 +20,6 @@ class SelectRoleFragment : Fragment() {
         _binding = FragmentSelectRoleBinding.inflate(inflater, container, false)
 
 
-        binding.cardManager.setOnClickListener {
-            findNavController().navigate(R.id.action_selectRoleFragment_to_managerLoginFragment)
-        }
-
-        binding.cardEmployee.setOnClickListener {
-            findNavController().navigate(R.id.action_selectRoleFragment_to_employeeLoginFragment)
-        }
-
-        binding.cardCompany.setOnClickListener {
-            findNavController().navigate(R.id.action_selectRoleFragment_to_companyLoginFragment)
-        }
 
         return binding.root
 

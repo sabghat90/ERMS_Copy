@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
-            android:text="Welcome, Manager"
+            android:text="@string/welcome_manager"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
                 android:id="@+id/edit_text_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +99,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="16dp"
-            android:text="Login"
+            android:text="@string/login"
             android:textAllCaps="true"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toTopOf="@+id/btn_signup"
@@ -114,7 +114,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textAllCaps="true"
             app:cornerRadius="8dp"
             app:layout_constraintBottom_toBottomOf="parent"

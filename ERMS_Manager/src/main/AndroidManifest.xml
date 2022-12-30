@@ -7,7 +7,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ERMS">
+        android:theme="@style/Theme.Base.ERMS">
         <activity
             android:name=".ManagerLoginActivity"
             android:exported="true">

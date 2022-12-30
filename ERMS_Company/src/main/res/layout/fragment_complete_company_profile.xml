@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CompleteCompanyInformationActivity"
-    tools:ignore="SpeakableTextPresentCheck">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CompleteCompanyProfileFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
+        <ImageView
             android:id="@+id/company_cover"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="120dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/company_cover_img" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/company_logo"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            app:civ_border_width="2dp"
+            app:civ_border_width="3dp"
+            android:scaleType="centerCrop"
             app:civ_border_color="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="@+id/company_cover"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +42,7 @@
             android:fontFamily="@font/poppins_bold"
             android:text="Your Company Basic Information"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/company_logo"
             app:layout_constraintStart_toStartOf="@+id/company_logo"
             app:layout_constraintTop_toBottomOf="@+id/company_logo" />
@@ -50,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:layout_marginTop="8dp"
-            android:background="#B1B1B1"
+            android:background="@color/colorOnBackground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -70,7 +72,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            app:boxStrokeWidthFocused="3dp"
+            app:boxStrokeWidthFocused="2dp"
             android:hint="Company Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/view3"
@@ -79,7 +81,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_company_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/roboto_bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -105,7 +109,8 @@
                 android:id="@+id/edit_text_company_regno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="#546E7A" />
+                android:inputType="text"
+                android:fontFamily="@font/roboto_bold" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -123,7 +128,6 @@
             app:counterEnabled="true"
             app:counterMaxLength="15"
             app:startIconDrawable="@drawable/ic_country"
-            app:startIconTint="@color/black"
             android:hint="Country"
             app:layout_constraintEnd_toEndOf="@+id/edit_text_company"
             app:layout_constraintStart_toStartOf="@+id/edit_text_company"
@@ -132,20 +136,20 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_country"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:fontFamily="@font/roboto_bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editTextTextMultiLine"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:ems="10"
             android:hint="Other Details"
-            android:gravity="start|top"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
             app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
@@ -154,45 +158,23 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_other_detail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:fontFamily="@font/roboto_bold" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            app:cornerRadius="5dp"
-            android:layout_marginEnd="16dp"
+            style="@style/custom_button"
+            android:layout_height="48dp"
             android:text="Submit"
+            app:cornerRadius="5dp"
             app:layout_constraintEnd_toEndOf="@+id/editTextTextMultiLine"
             app:layout_constraintStart_toStartOf="@+id/editTextTextMultiLine"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
-
-        <!--        <com.google.android.material.textfield.TextInputLayout-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginStart="16dp"-->
-        <!--            android:layout_marginTop="8dp"-->
-        <!--            android:layout_marginEnd="16dp"-->
-        <!--            android:hint="Country"-->
-        <!--            app:counterEnabled="true"-->
-        <!--            app:counterMaxLength="20"-->
-        <!--            app:startIconDrawable="@drawable/ic_phone"-->
-        <!--            app:endIconMode="clear_text"-->
-        <!--            app:endIconTint="@color/primaryLightColor"-->
-        <!--            app:helperText="* required"-->
-        <!--            app:helperTextTextColor="@color/colorRed"-->
-        <!--            app:layout_constraintTop_toBottomOf="@+id/edit_text_company_regNo">-->
-
-        <!--            <com.google.android.material.textfield.TextInputEditText-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content" />-->
-        <!--        </com.google.android.material.textfield.TextInputLayout>-->
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </ScrollView>

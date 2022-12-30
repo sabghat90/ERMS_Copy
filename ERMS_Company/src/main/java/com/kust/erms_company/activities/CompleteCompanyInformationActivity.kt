@@ -12,8 +12,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+import com.kust.erms_company.data.model.Company
 import com.kust.erms_company.databinding.ActivityCompleteCompanyInformationBinding
-import com.kust.erms_company.models.Company
 
 class CompleteCompanyInformationActivity : AppCompatActivity() {
 
@@ -75,7 +75,7 @@ class CompleteCompanyInformationActivity : AppCompatActivity() {
                         country = country,
                         otherDetails = otherDetail,
                         email = email!!,
-                        uid = uid!!
+                        id = uid!!
                     )
 
                     dbReference

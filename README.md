@@ -119,4 +119,4 @@ On the basis of attendance, task, events, meetings, work: employees will get poi
 </ol>
 
 ## LICENSE 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

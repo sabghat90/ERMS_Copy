@@ -117,3 +117,6 @@ On the basis of attendance, task, events, meetings, work: employees will get poi
 <li>https://play.google.com/store/apps/details?id=com.technoapps.employeeattendance</li>
 <li>https://bonus.ly</li>
 </ol>
+
+## LICENSE 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
